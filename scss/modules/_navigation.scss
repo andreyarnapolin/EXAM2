@@ -1,0 +1,68 @@
+.navigation {
+  height: 80px;
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #fff;
+    font: 500 14px/22px $gotham;
+    text-transform: uppercase;
+
+    svg {
+      fill: #fff;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:hover {
+    .navigation__dot {
+      background-color: white;
+    }
+  }
+
+  &__dot {
+    margin-right: 15px;
+    height: 9px;
+    width: 9px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__social {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+  }
+}

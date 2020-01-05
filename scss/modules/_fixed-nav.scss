@@ -1,0 +1,42 @@
+.fixed-nav {
+  position: fixed;
+  top: 50%;
+  right: 25px;
+  z-index: 9;
+  transform: translateY(-50%);
+}
+
+.fixed-nav a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  margin-bottom: 40px;
+  transition: all 0.3s;
+  color: black;
+  height: 9px;
+  width: 9px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  mix-blend-mode: darken;
+}
+
+.fixed-nav a:hover,
+.fixed-nav a.active {
+  color: black;
+  background: black;
+}
+
+.fixed-nav a span {
+  transition: all 0.5s;
+  position: absolute;
+  right: -20px;
+  opacity: 0;
+}
+
+.fixed-nav a:hover span,
+.fixed-nav a.active span {
+  right: 30px;
+  opacity: 1;
+}

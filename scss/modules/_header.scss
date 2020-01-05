@@ -1,0 +1,41 @@
+.header {
+  height: 100vh;
+  background: url(../images/bg-header.jpg);
+  position: relative;
+
+  &__title {
+    text-transform: uppercase;
+    font: bold 80px/22px $gotham;
+    letter-spacing: 0.5px;
+    text-align: center;
+    margin-top: 260px;
+    color: white;
+  }
+  &__text {
+    text-transform: uppercase;
+    font: 500 18px/22px $gotham;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+  }
+
+  &__arrow {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    max-width: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
